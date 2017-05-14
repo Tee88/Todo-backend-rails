@@ -1,3 +1,3 @@
 class Item < ApplicationRecord
-  validates :description, :status, presence: true
+  validates :description, presence: true
 end
