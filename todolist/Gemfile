@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+# A generalized Rack framework for multiple-provider authentication.
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.2.1'
 # For use with client side single page apps such as the venerable 
