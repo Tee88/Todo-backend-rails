@@ -41,7 +41,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
     respond_to do |format|
-      format.json { render :json => @items }
+      format.json { render :json => @item }
     end
   end
 
